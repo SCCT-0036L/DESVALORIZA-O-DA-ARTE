@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Desafio da Arte</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body class="quiz-page">
+
+    <!--
+        Fundo artístico do quiz.
+        O JavaScript trocará a imagem
+        dependendo do artista citado.
+    -->
+    <div
+        class="quiz-art-background"
+        id="quiz-art-background"
+        aria-hidden="true">
+    </div>
+
+
+    <main class="quiz-container">
+
+        <header class="quiz-header">
+
+            <a
+                href="index.html"
+                class="quiz-back">
+                ← VOLTAR
+            </a>
+
+            <p>
+                DESVALORIZAÇÃO DA ARTE
+            </p>
+
+            <span id="quiz-progress">
+                01 / 06
+            </span>
+
+        </header>
+
+
+        <section class="question-area">
+
+            <div class="question-number">
+
+                <span id="question-label">
+                    PERGUNTA 01
+                </span>
+
+            </div>
+
+
+            <h1 id="question">
+                Carregando pergunta...
+            </h1>
+
+
+            <div
+                class="answers"
+                id="answers">
+            </div>
+
+        </section>
+
+
+        <section
+            class="result-area"
+            id="result-area">
+
+            <p class="result-label">
+                RESULTADO
+            </p>
+
+
+            <h2>
+                <span id="score">
+                    0
+                </span>
+
+                <small>
+                    / 6
+                </small>
+            </h2>
+
+
+            <p id="result-message">
+                Resultado do questionário.
+            </p>
+
+
+            <button
+                class="restart-button"
+                id="restart-button"
+                type="button">
+
+                TENTAR NOVAMENTE
+
+                <span>
+                    ↻
+                </span>
+
+            </button>
+
+
+            <a
+                href="index.html"
+                class="home-link">
+                VOLTAR AO INÍCIO
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
